@@ -1,0 +1,24 @@
+\usepackage{graphicx} % For including images
+\usepackage{booktabs} % For professional-looking tables
+\usepackage{hyperref} % For creating hyperlinks
+\usepackage{url} % For better URL typesetting
+\usepackage{cleveref} % For smart cross-referencing
+\usepackage{amsmath} % For advanced mathematical typesetting
+\usepackage{amsfonts} % For extended math fonts (e.g., blackboard bold)
+\usepackage{bm} % For bold mathematical symbols
+\usepackage{xspace} % For intelligent spacing after macros
+
+% Beamer specific layout adjustments
+\setbeamercovered{transparent} % Make hidden content transparent
+\renewcommand{\baselinestretch}{1.15} % Set line spacing
+\setbeamersize{text margin left=12mm, text margin right=12mm} % Set text margins
+\setbeamertemplate{itemize item}{$\bullet$} % Change itemized list bullets to circles \setbeamertemplate{itemize subitem}{$\circ$} % Change itemized list sub-item bullets to circles
+
+% Add the EPFL logo to all slides
+\setbeamertemplate{logo}{
+	\includegraphics[height=0.8cm]{figures/epfl.png} % Adjust 'height' as needed for size
+}
+
+% Hyperref should generally be loaded last
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{hyperref}
