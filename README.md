@@ -31,28 +31,35 @@ This repository provides a minimal and clean LaTeX Beamer template designed for 
 1. **Clone the Repository**:
 
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-   cd YOUR_REPOSITORY_NAME
+   git clone https://github.com/lucadibello/epfl-beamer-template.git
+   cd beamer-template
    ```
 
-2. **Place the EPFL Logo**: Ensure you have the `epfl.png` logo file in a `figures/` subdirectory:
+This will create a local copy of the repository on your machine. The directory structure will look like this:
 
-   ```
-   .
-   ├── main.tex
-   ├── preamble.tex
-   ├── math_commands.tex
-   └── figures/
-       └── epfl.png
-   ```
+```
+.
+├── main.tex
+├── preamble.tex
+├── math_commands.tex
+└── figures/
+    └── epfl.png
+```
 
-   (If you don't have the `epfl.png` file, you might need to obtain an official version from EPFL's visual identity resources.)
+(The provided `epfl.png` file is not an official version, you might obtain an official version from EPFL's visual identity resources.)
 
-3. **Compile**: Use a LaTeX compiler (e.g., `pdflatex`) to build your presentation. Remember to compile at least twice for the table of contents and cross-references to resolve correctly.
+3. **Compile**: You can compile your presentation using the provided `Makefile`.
 
    ```bash
-   pdflatex main.tex
-   pdflatex main.tex
+   make
+   ```
+
+   This command will run `pdflatex` twice to ensure that the table of contents and any internal cross-references are correctly generated.
+
+   To remove all generated auxiliary files and the `main.pdf`, run:
+
+   ```bash
+   make clean
    ```
 
 ## Included Files
