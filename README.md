@@ -2,6 +2,23 @@
 
 This repository provides a minimal and clean LaTeX Beamer template designed for EPFL students. It aims to offer a straightforward starting point for your presentations, incorporating the EPFL logo on every slide for official affiliation.
 
+## Example Slides
+
+#### First slide
+
+<center>
+<img src="./assets/example_title.png" alt="Example Title Slide" width="600">
+</center>
+
+#### Other example slides
+
+<center>
+<img src="./assets/example_simple_slide.png" alt="Example Title Slide" width="600">
+</center>
+<center>
+<img src="./assets/example_other_simple_slide.png" alt="Example Title Slide" width="600">
+</center>
+
 ## Features
 
 - **Clean and Minimal Design**: Focuses on content presentation without distracting visual clutter.
@@ -44,5 +61,3 @@ This repository provides a minimal and clean LaTeX Beamer template designed for 
 - [`preamble.tex`](preamble.tex): Contains all LaTeX package inclusions and general Beamer settings for consistent styling.
 - [`math_commands.tex`](math_commands.tex): A dedicated file for common mathematical macros and operators.
 - `figures/epfl.png`: The placeholder for the EPFL logo used throughout the presentation.
-
-## Example Slides
